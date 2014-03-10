@@ -31,5 +31,5 @@ var checkForPrimes = function() {
 	
 	result += returnArray.toString() + "</p>";
 	
-	document.getElementById("results").innerHTML = results;
+	document.getElementById("results").innerHTML = result;
 };

@@ -13,7 +13,7 @@ var checkForPrimes = function() {
 	var count = 0;
 	var resultFound = false;
 	var userNum = document.getElementById("userNumber").value;
-	var result = "The prime factorization of " + userNum + " is: ";
+	var result = "<p>The prime factorization of " + userNum + " is: ";
 
 	while(!isPrime(userNum)) {
 		while(count < primeArray.length && !resultFound) {
@@ -29,7 +29,7 @@ var checkForPrimes = function() {
 	}
 	returnArray.push(userNum);
 	
-	result += returnArray.toString();
+	result += returnArray.toString() + "</p>";
 	
 	document.getElementById("results").innerHTML = results;
 };

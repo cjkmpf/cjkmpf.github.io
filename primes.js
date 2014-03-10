@@ -1,4 +1,3 @@
-
 var isPrime = function(number) {
 	for (i = 2; i < number; i++) {
 		if ((number % i) == 0) {
@@ -14,6 +13,7 @@ var checkForPrimes = function() {
 	var count = 0;
 	var resultFound = false;
 	var userNum = document.getElementById("userNumber").value;
+	var result = "The prime factorization of " + userNum + " is: ";
 
 	while(!isPrime(userNum)) {
 		while(count < primeArray.length && !resultFound) {
@@ -28,5 +28,8 @@ var checkForPrimes = function() {
 		resultFound = false;
 	}
 	returnArray.push(userNum);
-	document.write(returnArray);
+	
+	result += returnArray.toString();
+	
+	document.getElementById("results").innerHTML = results;
 };

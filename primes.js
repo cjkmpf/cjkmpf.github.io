@@ -9,10 +9,12 @@ var isPrime = function(number) {
 
 var buildPrimeArray = function(upperLimit) {
 	var returnList = [2];
-	for (var i = 3; i < upperLimit; i++) {
+	var i = 3;
+	for (while i < upperLimit) {
 		if (isPrime(i)) {
 			returnList.push(i);
 		}
+		i += 1;
 	}
 	return returnList;
 };

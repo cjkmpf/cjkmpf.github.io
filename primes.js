@@ -10,7 +10,7 @@ var isPrime = function(number) {
 var buildPrimeArray = function(upperLimit) {
 	var returnList = [2];
 	var i = 3;
-	for (while i < upperLimit) {
+	while (i < upperLimit) {
 		if (isPrime(i)) {
 			returnList.push(i);
 		}

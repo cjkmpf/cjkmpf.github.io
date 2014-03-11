@@ -7,13 +7,23 @@ var isPrime = function(number) {
 	return true;
 };
 
+var buildPrimeArray = function(upperLimit) {
+	var returnList = [2];
+	for (i = 3; i < upperLimit; i++) {
+		if (isPrime(i)) {
+			returnList.push(i);
+		}
+	}
+	return returnList;
+};
+
 var checkForPrimes = function() {
-	var primeArray = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 72, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199];
 	var returnArray = [];
 	var count = 0;
 	var resultFound = false;
 	var userNum = document.getElementById("userNumber").value;
 	var result = "<p>The prime factorization of " + userNum + " is: ";
+	var primeArray = buildPrimeArray(userNum);
 
 	while(!isPrime(userNum)) {
 		while(count < primeArray.length && !resultFound) {

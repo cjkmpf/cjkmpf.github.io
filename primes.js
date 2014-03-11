@@ -1,5 +1,5 @@
 var isPrime = function(number) {
-	for (i = 2; i < number; i++) {
+	for (var i = 2; i < number; i++) {
 		if ((number % i) == 0) {
 			return false;
 		}
@@ -9,7 +9,7 @@ var isPrime = function(number) {
 
 var buildPrimeArray = function(upperLimit) {
 	var returnList = [2];
-	for (i = 3; i < upperLimit; i++) {
+	for (var i = 3; i < upperLimit; i++) {
 		if (isPrime(i)) {
 			returnList.push(i);
 		}

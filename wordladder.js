@@ -1,12 +1,12 @@
 var Stack = function() {
 	var stackList = [];
 
-	this.push = function(item) {
+	this.stackPush = function(item) {
 		this.stackList.push(item);
 		return;
 	}
 
-	this.pop = function(item) {
+	this.stackPop = function(item) {
 		return this.stackList.pop();
 	}
 
@@ -105,7 +105,7 @@ var getOneDifferents = function(word, wList) {
 	return oneDifferents;
 };
 
-main = function() {
+var main = function() {
 
 	var beginWord = document.getElementById("userBeginWord");
 	var endWord = document.getElementById("userEndWord");
@@ -122,7 +122,7 @@ main = function() {
 
 	var queue = new Queue();
 	var stack = new Stack();
-	stack.push(beginWord);
+	stack.stackPush(beginWord);
 	queue.enqueue(stack);
 	usedWords = new Set();
 	usedWords.add(beginWord);
@@ -147,7 +147,7 @@ main = function() {
 			if (!nextInUsed) {
 				usedWords.addToSet(nextWords[i]);
 				var newStack = currentStack.clone();
-				newStack.push(nextWords[i]);
+				newStack.stackPush(nextWords[i]);
 
 				if (nextWords[i] == endWord) {
 					done = true;

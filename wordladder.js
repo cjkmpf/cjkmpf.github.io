@@ -11,7 +11,7 @@ var Stack = function() {
 	}
 
 	this.peek = function() {
-		return this.stackList[this.stackList.length - 1];
+		return stackList[stackList.length - 1];
 	}
 
 	this.isEmpty = function() {

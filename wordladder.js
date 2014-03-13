@@ -2,7 +2,7 @@ var Stack = function() {
 	var stackList = [];
 
 	this.stackPush = function(item) {
-		this.stackList.push(item);
+		stackList.push(item);
 		return;
 	}
 

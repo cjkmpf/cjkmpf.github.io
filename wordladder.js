@@ -46,7 +46,7 @@ var Queue = function() {
 	var queueList = [];
 
 	this.enqueue = function(item) {
-		this.queueList.push(item);
+		queueList.push(item);
 		return;
 	}
 
@@ -72,7 +72,7 @@ var Set = function() {
 	var setList = [];
 
 	this.addToSet = function(item) {
-		this.setList.push(item);
+		setList.push(item);
 		return;
 	}
 

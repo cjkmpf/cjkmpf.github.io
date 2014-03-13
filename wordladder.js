@@ -51,7 +51,7 @@ var Queue = function() {
 	}
 
 	this.dequeue = function() {
-		var removed = this.queueList.splice(0,1);
+		var removed = queueList.splice(0,1);
 		return(removed[0]);
 	}
 

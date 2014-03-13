@@ -125,7 +125,7 @@ var main = function() {
 	stack.stackPush(beginWord);
 	queue.enqueue(stack);
 	usedWords = new Set();
-	usedWords.add(beginWord);
+	usedWords.addToSet(beginWord);
 
 	var done = false;
 	var found = false;

@@ -7,7 +7,7 @@ var Stack = function() {
 	}
 
 	this.stackPop = function(item) {
-		return this.stackList.pop();
+		return stackList.pop();
 	}
 
 	this.peek = function() {
@@ -15,7 +15,7 @@ var Stack = function() {
 	}
 
 	this.isEmpty = function() {
-		if (this.stackList.length == 0) {
+		if (stackList.length == 0) {
 			return true;
 		} else {
 			return false;
@@ -23,11 +23,11 @@ var Stack = function() {
 	}
 
 	this.size = function() {
-		return this.stackList.length;
+		return stackList.length;
 	}
 
 	this.clone = function() {
-		var newList = this.stackList.slice(0);
+		var newList = stackList.slice(0);
 		var newStack = new Stack();
 
 		for (var i = 0; i < newList.length; i++) {
@@ -38,7 +38,7 @@ var Stack = function() {
 	}
 
 	this.show = function() {
-		return this.stackList;
+		return stackList;
 	}
 };
 
@@ -56,7 +56,7 @@ var Queue = function() {
 	}
 
 	this.isEmpty = function() {
-		if (this.queueList.length == 0) {
+		if (queueList.length == 0) {
 			return true;
 		} else {
 			return false;
@@ -64,7 +64,7 @@ var Queue = function() {
 	}
 
 	this.size = function() {
-		return this.queueList.length;
+		return queueList.length;
 	}
 };
 
@@ -80,7 +80,7 @@ var Set = function() {
 		var foundItem = false;
 
 		for (var i = 0; i < this.setList.length; i++) {
-			if (this.setList[i] == item) {
+			if (setList[i] == item) {
 				foundItem = true;
 			}
 		}

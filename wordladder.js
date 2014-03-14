@@ -175,7 +175,7 @@ var main = function() {
 		var finalString = "";
 		
 		for (var i = 0; i < finalList.length; i++) {
-			finalString += finalList[i] + "\n";
+			finalString += "<p>" + finalList[i] + "</p>";
 		}
 		
 		document.getElementById("results").innerHTML = finalString;

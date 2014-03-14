@@ -111,6 +111,10 @@ var main = function() {
 	var endWord = document.getElementById("userEndWord");
 	var wordLength = document.getElementById("lenChoice");
 	var wordLenVal = wordLength.options[wordLength.selectedIndex].value;
+	
+	console.log(beginWord);
+	console.log(endWord);
+	console.log(wordLenVal);
 
 	if (wordLenVal == 3) {
 		var useList = threeLetterWords;

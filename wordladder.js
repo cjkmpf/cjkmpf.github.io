@@ -107,9 +107,9 @@ var getOneDifferents = function(word, wList) {
 
 var main = function() {
 
-	var beginWord = document.getElementById("userBeginWord");
-	var endWord = document.getElementById("userEndWord");
-	var wordLength = document.getElementById("lenChoice");
+	var beginWord = document.getElementById("userBeginWord").value;
+	var endWord = document.getElementById("userEndWord").value;
+	var wordLength = document.getElementById("lenChoice").value;
 	var wordLenVal = wordLength.options[wordLength.selectedIndex].value;
 	
 	console.log(beginWord);

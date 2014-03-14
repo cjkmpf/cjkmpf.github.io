@@ -89,9 +89,10 @@ var Set = function() {
 };
 
 var getOneDifferents = function(word, wList) {
-	console.log(word);
-	console.log(wList);
 	var oneDifferents = [];
+	
+	console.log(word.length);
+	console.log(word[1]);
 
 	for (var i = 0; i < wList.length; i++) {
 		var sameCh = 0;
@@ -114,10 +115,6 @@ var main = function() {
 	var endWord = document.getElementById("userEndWord").value;
 	var wordLength = document.getElementById("lenChoice");
 	var wordLenVal = wordLength.options[wordLength.selectedIndex].value;
-	
-	console.log(beginWord);
-	console.log(endWord);
-	console.log(wordLenVal);
 
 	if (wordLenVal == 3) {
 		var useList = threeLetterWords;

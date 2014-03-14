@@ -172,7 +172,13 @@ var main = function() {
 	if (!found) {
 		alert("No matches could be found")
 	} else {
-		document.getElementById("results").innerHTML = finalList;
+		var finalString = "";
+		
+		for (var i = 0; i < finalList.length; i++) {
+			finalString += finalList[i] + "\n";
+		}
+		
+		document.getElementById("results").innerHTML = finalString;
 	}
 	return;
 }

@@ -173,7 +173,7 @@ var main = function() {
 		alert("No matches could be found")
 	} else {
 		var printList = finalList.reverse();
-		alert(printList);
+		document.getElementById("results").innerHTML = printList;
 	}
 	return;
 }

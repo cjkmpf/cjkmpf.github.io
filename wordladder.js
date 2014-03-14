@@ -172,8 +172,7 @@ var main = function() {
 	if (!found) {
 		alert("No matches could be found")
 	} else {
-		var printList = finalList.reverse();
-		document.getElementById("results").innerHTML = printList;
+		document.getElementById("results").innerHTML = finalList;
 	}
 	return;
 }

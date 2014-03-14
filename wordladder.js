@@ -97,12 +97,12 @@ var getOneDifferents = function(word, wList) {
 	for (var i = 0; i < wList.length; i++) {
 		var sameCh = 0;
 		for(var j = 0; j < wList[i].length; j++) {
-			if (wList[i] == word[j]) {
+			if (wList[i][j] == word[j]) {
 				sameCh += 1;
 			}
 		}		
 		if (sameCh == word.length - 1) {
-			oneDifferents.append(wList[i]);
+			oneDifferents.push(wList[i]);
 		}
 	}
 	console.log(oneDifferents);

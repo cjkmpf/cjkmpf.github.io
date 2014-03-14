@@ -31,7 +31,7 @@ var Stack = function() {
 		var newStack = new Stack();
 
 		for (var i = 0; i < newList.length; i++) {
-			newStack.push(newList[i]);
+			newStack.stackPush(newList[i]);
 		}
 
 		return newStack;

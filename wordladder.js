@@ -109,7 +109,7 @@ var main = function() {
 
 	var beginWord = document.getElementById("userBeginWord").value;
 	var endWord = document.getElementById("userEndWord").value;
-	var wordLength = document.getElementById("lenChoice").value;
+	var wordLength = document.getElementById("lenChoice");
 	var wordLenVal = wordLength.options[wordLength.selectedIndex].value;
 	
 	console.log(beginWord);

@@ -102,6 +102,7 @@ var getOneDifferents = function(word, wList) {
 			oneDifferents.append(wList[i]);
 		}
 	}
+	console.log(oneDifferents);
 	return oneDifferents;
 };
 

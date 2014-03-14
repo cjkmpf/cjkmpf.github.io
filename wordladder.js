@@ -89,6 +89,8 @@ var Set = function() {
 };
 
 var getOneDifferents = function(word, wList) {
+	console.log(word);
+	console.log(wList);
 	var oneDifferents = [];
 
 	for (var i = 0; i < wList.length; i++) {
